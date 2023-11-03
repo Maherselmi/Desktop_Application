@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="539.0" prefWidth="748.0" style="-fx-background-color: #FEBB61;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Register">
+   <children>
+      <TextField layoutX="100.0" layoutY="112.0" prefHeight="34.0" prefWidth="171.0" />
+      <TextField layoutX="102.0" layoutY="164.0" />
+      <TextField layoutX="102.0" layoutY="248.0" />
+      <PasswordField layoutX="102.0" layoutY="319.0" />
+      <PasswordField layoutX="102.0" layoutY="407.0" />
+   </children>
+</AnchorPane>

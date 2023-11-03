@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="548.0" prefWidth="1044.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Consulteremploye">
+
+
+    <children>
+        <Pane layoutX="245.0" prefHeight="81.0" prefWidth="578.0">
+            <children>
+                <TextField fx:id="tfsearch" layoutX="14.0" layoutY="52.0" prefHeight="30.0" prefWidth="110.0" promptText="search" />
+                <Label fx:id="lblErrors" layoutX="336.0" layoutY="14.0" prefHeight="30.0" prefWidth="194.0" />
+
+            </children></Pane>
+        <Pane prefHeight="548.0" prefWidth="236.0" style="-fx-background-color: #a3a3a3;">
+            <children>
+
+                <Button fx:id="btnajout" layoutX="25.0" layoutY="186.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="30.0" prefWidth="152.0" text="Ajouter Employe" />
+                <Pane layoutX="6.0" layoutY="274.0" prefHeight="203.0" prefWidth="215.0" style="-fx-background-color: #4c4e52;">
+                    <children>
+                        <TextField fx:id="tfid" layoutX="46.0" layoutY="51.0" onAction="#handleButtonSupp" prefHeight="30.0" prefWidth="110.0" promptText="id " />
+                        <Button fx:id="btnmodifier" layoutY="107.0" mnemonicParsing="false" onMouseClicked="#handleButtonmodif" prefHeight="30.0" prefWidth="126.0" text="modifier Employe" />
+                        <Button fx:id="btnsupprimer" layoutX="127.0" layoutY="107.0" mnemonicParsing="false" onMouseClicked="#handleButtonSupp" prefHeight="30.0" prefWidth="88.0" text="supprimer" />
+                    </children>
+                </Pane>
+            <ImageView fitHeight="127.0" fitWidth="204.0" layoutX="13.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/PngItem_2088584.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="101.0" layoutY="495.0" mnemonicParsing="false" onAction="#handleButtonreturn" text="return" />
+            </children>
+        </Pane>
+        <TableView fx:id="tvemp" layoutX="234.0" layoutY="82.0" onMouseClicked="#getSelected" prefHeight="466.0" prefWidth="808.0">
+            <columns>
+                <TableColumn fx:id="colid" prefWidth="77.19999694824219" text="id" />
+                <TableColumn fx:id="colnom" prefWidth="86.20001220703125" text="Nom" />
+                <TableColumn fx:id="colprenom" prefWidth="117.0" text="Prenom" />
+                <TableColumn fx:id="coldcin" prefWidth="113.5999755859375" text="CIN" />
+                <TableColumn fx:id="colposte" prefWidth="113.0" text="emploi" />
+            <TableColumn fx:id="coledatedenaissance" minWidth="0.0" prefWidth="119.0" text="date de naissance" />
+            <TableColumn fx:id="colcode" prefWidth="189.39996337890625" text="code d'inscription" />
+            </columns>
+        </TableView>
+          <Button fx:id="lbconnect" layoutX="953.0" layoutY="44.0" mnemonicParsing="false" onMouseClicked="#handleButtonrefresh" text="refresh" />
+    </children>
+
+</AnchorPane>

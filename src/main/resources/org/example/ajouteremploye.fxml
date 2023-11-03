@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="460.0" prefWidth="448.0" style="-fx-background-color: #a3a3a3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Ajouteremploye">
+    <children>
+        <TextField fx:id="tfnom" layoutX="138.0" layoutY="99.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <TextField fx:id="tfprenom" layoutX="138.0" layoutY="143.0" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="143.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <TextField fx:id="tfcin" layoutX="138.0" layoutY="184.0" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="184.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <Label layoutX="12.0" layoutY="280.0" prefHeight="30.0" prefWidth="120.0" text="date de naissance:" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
+        </Label>
+        <Label layoutX="31.0" layoutY="148.0" text="Prenom" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="45.0" layoutY="189.0" prefHeight="20.0" prefWidth="49.0" text="Cin" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="38.0" layoutY="235.0" text="emploi" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="txchaine" layoutX="100.0" layoutY="38.0" prefHeight="37.0" prefWidth="346.0" text="Ajouter Employe" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="27.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnajout" layoutX="237.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #4c4e52;" styleClass="#4c4e52" text="Ajouter" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnannuler" layoutX="89.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#handleButtonretour" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #4c4e52;" text="Retour" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+
+        <TextField fx:id="tfdatenaiss" layoutX="137.0" layoutY="280.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <Label layoutX="40.0" layoutY="99.0" prefHeight="30.0" prefWidth="99.0" text="Nom" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
+        </Label>
+        <Button fx:id="btnmodif" layoutX="186.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#handleButtonapp" style="-fx-background-color: #bdc6d9;" text="modifier" />
+        <ChoiceBox fx:id="lbljob" layoutX="137.0" layoutY="230.0" prefHeight="30.0" prefWidth="169.0" />
+    </children>
+
+
+</AnchorPane>

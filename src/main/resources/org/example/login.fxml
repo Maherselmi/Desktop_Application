@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Login">
+    <children>
+        <ImageView fitHeight="407.0" fitWidth="688.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/plateforme-digitale-1080x675.jpg" />
+         </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="459.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/e4635fb3455f43088bbc19b1e8e0a6f9.png" />
+         </image>
+        </ImageView>
+        <TextField fx:id="txtid" layoutX="449.0" layoutY="170.0" prefHeight="40.0" prefWidth="174.0" promptText="Votre ID" style="-fx-background-color: ffff;" />
+        <PasswordField fx:id="txtmdp" layoutX="449.0" layoutY="230.0" prefHeight="40.0" prefWidth="174.0" promptText="Mot de pass" style="-fx-background-color: ffff;" />
+        <Button fx:id="cnx" layoutX="537.0" layoutY="314.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #ddbd3d;" text="connexion">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label fx:id="mpo" layoutX="408.0" layoutY="316.0" prefHeight="19.0" prefWidth="124.0" text="Mot de pass oublié" textFill="#c6a235">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Button fx:id="ins" layoutX="551.0" layoutY="357.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #ddbd3d;" text="S'inscrire">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label fx:id="lblbienvenue" layoutX="46.0" layoutY="2.0" prefHeight="33.0" prefWidth="328.0" text="Bienvenue dans notre équipe" textFill="#ddbd3d">
+            <font>
+                <Font name="Bauhaus 93" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblerreur" layoutX="427.0" layoutY="284.0" prefHeight="22.0" prefWidth="205.0" textFill="RED">
+            <font>
+                <Font name="Calibri" size="14.0" />
+            </font></Label>
+        <Button fx:id="btnretour" layoutX="411.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleButtonRetourn" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #ddbd3d;" text="Retour">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

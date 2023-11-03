@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="646.0" style="-fx-background-color: ffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Espaceadmindemo">
+<children>
+    <AnchorPane prefHeight="80.0" prefWidth="646.0" style="-fx-background-color: #ddbd3d;">
+        <children>
+            <Label fx:id="lblmenu" layoutX="35.0" layoutY="16.0" text="Espace admin (demo)" textFill="WHITE">
+                <font>
+                    <Font name="Vivaldi Italic" size="36.0" />
+                </font>
+            </Label>
+            <Button fx:id="btndeconnexion" layoutX="525.0" layoutY="26.0" mnemonicParsing="false" onAction="#deconnecter" style="-fx-background-color: ffff;" text="Déconnexion">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+        </children>
+    </AnchorPane>
+    <Button fx:id="btnmateriel" layoutX="118.0" layoutY="224.0" mnemonicParsing="false" onAction="#Consultermateriel" style="-fx-background-color: #ddbd3d;" text="Consulter materiel">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Button>
+    <Button fx:id="btnemploye" layoutX="401.0" layoutY="224.0" mnemonicParsing="false" onAction="#Consulteremploye" onMouseClicked="#Consulteremploye" prefHeight="29.0" prefWidth="142.0" style="-fx-background-color: #ddbd3d;" text="Consulter employé">
+        <font>
+            <Font name="System Bold" size="13.0" />
+        </font>
+    </Button>
+    <ImageView fitHeight="60.0" fitWidth="100.0" layoutX="134.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@image/49204935_2296235937280182_8275265616944824320_n.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="80.0" fitWidth="85.0" layoutX="427.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@image/men-3-icon.png" />
+        </image>
+    </ImageView>
+</children>
+</AnchorPane>

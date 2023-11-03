@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="548.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Consultermatriel">
+   <children>
+      <Pane layoutX="245.0" prefHeight="81.0" prefWidth="578.0">
+         <children>
+            <TextField fx:id="tfsearch" layoutX="14.0" layoutY="52.0" prefHeight="30.0" prefWidth="110.0" promptText="search" />
+            <Button fx:id="lbconnect" layoutX="464.0" layoutY="52.0" mnemonicParsing="false" onMouseClicked="#handleButtonrefresh" text="refresh" />
+            <Label fx:id="lblErrors" layoutX="336.0" layoutY="14.0" prefHeight="30.0" prefWidth="194.0" />
+
+         </children></Pane>
+      <Pane prefHeight="548.0" prefWidth="246.0" style="-fx-background-color: #b8ba86;">
+         <children>
+            <ImageView fitHeight="163.0" fitWidth="246.0" layoutX="2.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/kisspng-clip-art-portable-network-graphics-pickup-truck-ca-gardinen-transparent-5ce4711d0393d6.5969518415584750370147.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnajout" layoutX="35.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="30.0" prefWidth="152.0" text="Ajouter matriel" />
+            <Pane layoutX="6.0" layoutY="274.0" prefHeight="200.0" prefWidth="231.0" style="-fx-background-color: #6c7a58;">
+               <children>
+                  <TextField fx:id="tfid" layoutX="46.0" layoutY="51.0" onAction="#handleButtonSupp" prefHeight="30.0" prefWidth="110.0" promptText="id " />
+                  <Button fx:id="btnmodifier" layoutY="107.0" mnemonicParsing="false" onMouseClicked="#handleButtonmodif" prefHeight="30.0" prefWidth="134.0" text="modifier matriel" />
+                  <Button fx:id="btnsupprimer" layoutX="136.0" layoutY="107.0" mnemonicParsing="false" onMouseClicked="#handleButtonSupp" prefHeight="30.0" prefWidth="91.0" text="supprimer" />
+               </children>
+            </Pane>
+            <Button layoutX="74.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleButtonreturn" text="return" />
+         </children>
+      </Pane>
+      <TableView fx:id="tvmatriel" layoutX="245.0" layoutY="83.0" onDragEntered="#getSelected" onMouseClicked="#getSelected" prefHeight="450.0" prefWidth="577.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="82.19998168945312" text="id" />
+          <TableColumn fx:id="coltype" prefWidth="68.20001220703125" text="type" />
+            <TableColumn fx:id="colmarque" prefWidth="146.199951171875" text="marque" />
+            <TableColumn fx:id="coldateaj" prefWidth="140.80001220703127" text="date aj" />
+            <TableColumn fx:id="coletat" prefWidth="137.60002441406255" text="etat" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
